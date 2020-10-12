@@ -3,7 +3,7 @@ import React from 'react';
 import './checkout.styles.scss';
 
 const CheckoutPage = () => (
-    <div className='Checkout-page'>
+    <div className='checkout-page'>
         <div className='checkout-header'>
             <div className='header-block'>
                 <span>Product</span>
