@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-router';
+import { connect } from 'react-redux';
 
 import { clearItemFromCart } from '../../redux/cart/cart.actions';
 
