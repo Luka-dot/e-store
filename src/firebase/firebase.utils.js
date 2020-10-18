@@ -18,10 +18,12 @@ const config = {
 
   export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
-  
-    const userRef = firestore.doc(`users/${userAuth.uid}`);
+
+    const userRef = firestore.doc(`users/${userAuth.uid}`); 
   
     const snapShot = await userRef.get();
+
+    // const collectionSnapshot = await collectionRef.get();
 
     if (!snapShot.exists) {
       const { displayName, email } = userAuth;
@@ -41,7 +43,22 @@ const config = {
     return userRef;
   };
 
+ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+   console.log(collectionKey)
+  const collectionRef = firestore.collection(collectionKey);
+  console.log(collectionRef);
 
+  const batch = firestore.batch();
+  
+  objectsToAdd.forEach(obj => {
+    const newDocRef = collectionRef.doc();
+    
+    batch.set(newDocRef, obj);
+  })
+
+  return await batch.commit();
+
+ };
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
