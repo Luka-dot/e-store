@@ -32,5 +32,5 @@ export const emailSignInSuccess = (user) => ({
 export const emailSignInFaiure = (error) => ({
     type: UserActionTypes.EMAIL_SIGN_IN_FAILURE,
     payload: error
-}
-);
+});
+// test note
