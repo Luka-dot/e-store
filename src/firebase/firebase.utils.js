@@ -78,6 +78,18 @@ export const convertCollectionSnapshotToMap = (collections) => {
   }, {})
 };
 
+// helper function to create promise for saga to be able to use and yield for. This is just a way
+// to create saga even so it is not really needed for Firebase.
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      unsubscribe();
+      resolve(userAuth);
+
+    }, reject)
+  })
+};
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
