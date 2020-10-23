@@ -8,6 +8,7 @@ import ShopPage from './pages/shop/shop.component';
 import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header.component/header.component';
 import SignInAndSignOut from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import { checkUserSession } from './redux/user/user.actions';
 
 import { selectCurrentUser } from './redux/user/user.selector';
 import HomePage from './pages/homepage/homepage.componenet';
@@ -19,22 +20,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-
-    // this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-    //   if (userAuth) {
-    //     const userRef =  await createUserProfileDocument(userAuth);
-
-    //     userRef.onSnapshot(snapShot => {
-    //       setCurrentUser({
-    //           id: snapShot.id,
-    //           ...snapShot.data()
-    //       })
-    //     });
-    //   }
-      
-    //   setCurrentUser(userAuth);
-    //  addCollectionAndDocuments('collections', collectionsArray.map(({ title, items}) => ({ title, items }) ));
-  //  });
+    const { checkUserSession } = this.props;
   }
 
   componentWillUnmount() {
@@ -60,7 +46,11 @@ class App extends React.Component {
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 //  collectionsArray: selectCollectionsForPreview
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  checkUserSession: () => dispatch(checkUserSession())
 })
 
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
