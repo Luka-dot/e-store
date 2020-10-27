@@ -51,14 +51,14 @@ class SignUp extends React.Component {
                         name='displayName'
                         value={displayName}
                         onChange={this.handleChange}
-                        label='Display Email'
+                        label='Display Name'
                     />
                     <FormInput
                         type='email'
                         name='email'
                         value={email}
                         onChange={this.handleChange}
-                        label='Display Name'
+                        label='Display Email'
                     /> 
                     <FormInput
                         type='password'
@@ -81,7 +81,7 @@ class SignUp extends React.Component {
     }
 };
 
-mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     signUpStart: userCredentials => dispatch(signUpStart(userCredentials))
 })
 
