@@ -10,7 +10,7 @@ import { GlobalStyle } from './global.styles';
 import Header from './components/header.component/header.component';
 //  import SignInAndSignOut from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { checkUserSession } from './redux/user/user.actions';
-
+import Spinner from './components/spinner/spinner.component';
 import { selectCurrentUser } from './redux/user/user.selector';
 //  import HomePage from './pages/homepage/homepage.componenet';
 
@@ -31,7 +31,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <GlobalStyle />
         <Header />
         <Switch>
-          <Suspense fallback={<div>... Loading ...</div>}>
+          <Suspense fallback={<Spinner />}>
             <Route exact path='/' component={HomePage} />
             <Route path='/shop' component={ShopPage} />
             <Route path='/checkout' component={CheckoutPage} />
