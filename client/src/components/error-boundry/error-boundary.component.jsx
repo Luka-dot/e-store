@@ -21,7 +21,7 @@ class ErrorBoundry extends React.Component {
     }
 
     render() {
-        if (this.state,hasError) {
+        if (this.state.hasError) {
             return (
                 <ErrorImageOverlay>
                     <ErrorImageContainer imageUrl='https://i.imgur.com/qIufhof.png' />
