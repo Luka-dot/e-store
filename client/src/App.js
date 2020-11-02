@@ -12,6 +12,7 @@ import Header from './components/header.component/header.component';
 import { checkUserSession } from './redux/user/user.actions';
 import Spinner from './components/spinner/spinner.component';
 import { selectCurrentUser } from './redux/user/user.selector';
+import ErrorBoundry from './components/error-boundry/error-boundary.component';
 //  import HomePage from './pages/homepage/homepage.componenet';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.componenet'));
@@ -31,12 +32,14 @@ const App = ({ checkUserSession, currentUser }) => {
         <GlobalStyle />
         <Header />
         <Switch>
-          <Suspense fallback={<Spinner />}>
-            <Route exact path='/' component={HomePage} />
-            <Route path='/shop' component={ShopPage} />
-            <Route path='/checkout' component={CheckoutPage} />
-            <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignOut/>)} />
-          </Suspense>
+          <ErrorBoundry>
+            <Suspense fallback={<Spinner />}>
+              <Route exact path='/' component={HomePage} />
+              <Route path='/shop' component={ShopPage} />
+              <Route path='/checkout' component={CheckoutPage} />
+              <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignOut/>)} />
+            </Suspense>
+          </ErrorBoundry>
         </Switch>
       </div>
     );
