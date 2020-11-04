@@ -1,10 +1,25 @@
 import styled from 'styled-components';
 
+// height: ${({ size }) => (size ? '380px' : '240px')};
+
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '380px' : '240px')};
+	height: ${({ size }) =>{ if (size === "large") {
+    return '380px';
+  } if (size === "small") {
+    return "240px";
+  } if (size === "medium") {
+    return "300px";
+  }}};
+  width: ${({ size }) =>{ if (size === "large") {
+    return '380px';
+  } if (size === "small") {
+    return "240px";
+  } if (size === "medium") {
+    return "300px";
+  }}};
 	min-width: 30%;
 	overflow: hidden;
-	flex: 1 1 auto;
+	flex: 1 1 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;

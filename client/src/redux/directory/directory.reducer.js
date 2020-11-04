@@ -3,6 +3,7 @@ const INITIAL_STATE = {
     {
       title: 'hats',
       imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      size: 'small',
       id: 1,
       linkUrl: 'shop/hats',
    
@@ -12,6 +13,7 @@ const INITIAL_STATE = {
       // imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
       title: 'jackets',
       imageUrl: 'https://images.unsplash.com/photo-1594639440713-171c55701c62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80',
+      size: "small",
       id: 2,
       linkUrl: 'shop/jackets',
       
@@ -22,6 +24,7 @@ const INITIAL_STATE = {
       // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
       title: 'boots',
       imageUrl: 'https://images.unsplash.com/photo-1528641638513-63e382072b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80',
+      size: 'medium',
       id: 3,
       linkUrl: 'shop/sneakers',
       
