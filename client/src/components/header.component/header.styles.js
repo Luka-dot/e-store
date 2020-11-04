@@ -20,14 +20,19 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-    height: 100%;
-    width: 70px;
-    padding: 25px;
+    height: 130%;
+    width: 30vh;
+    padding: 5px;
 
     @media screen and (max-width: 800px) {
         padding: 0px;
         width: 50px
     }
+`;
+
+export const LogoImg = styled.img`
+    width: 100%;
+    height: 100%;
 `;
 
 export const OptionsContainer = styled.div`

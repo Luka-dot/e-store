@@ -9,13 +9,13 @@ import { selectCurrentUser } from '../../redux/user/user.selector';
 import { signOutStart } from '../../redux/user/user.actions';
 
 // import './header.styles.scss';
-import { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink } from './header.styles';
-import { ReactComponent as Logo } from '../../assets/crown.svg'
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink, LogoImg } from './header.styles';
+import logo from '../../assets/GreatOutdoors-logo.png';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
     <HeaderContainer >
         <LogoContainer to="/" >
-            <Logo className='logo' />
+            <LogoImg src={logo} alt="Logo" />
         </LogoContainer>
         <OptionsContainer >
             <OptionLink to='/shop'>SHOP</OptionLink>
