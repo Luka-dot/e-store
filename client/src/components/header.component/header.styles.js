@@ -20,19 +20,36 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-    height: 130%;
-    width: 30vh;
-    padding: 5px;
+    width: 570px;
+    height: 70px;
+    padding: px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
     @media screen and (max-width: 800px) {
-        padding: 0px;
-        width: 50px
+       display: absolute;
+       margin-top: -2.2vh;
     }
 `;
 
 export const LogoImg = styled.img`
-    width: 100%;
-    height: 100%;
+width: 75px;
+height: 75px;
+
+@media screen and (max-width: 800px) {
+    align-items: top;
+}
+`;
+
+export const NameContainer = styled.h2`\
+    color: darkgreen;
+    display: flex;
+    align-items: left;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 export const OptionsContainer = styled.div`
