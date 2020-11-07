@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { TimelineMax } from "gsap";
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -12,11 +13,20 @@ import { signOutStart } from '../../redux/user/user.actions';
 import { HeaderContainer, LogoContainer, NameContainer, OptionsContainer, OptionDiv, OptionLink, LogoImg } from './header.styles';
 import logo from '../../assets/logo.png';
 
-const Header = ({ currentUser, hidden, signOutStart }) => (
+const Header = ({ currentUser, hidden, signOutStart }) => {
+
+    useEffect(() => {
+        const tl = new TimelineMax();
+    
+        tl.fromTo("#logoPic", 0.6, { y: -50, opacity: 0 }, {y: 0, opacity:1, delay:1 });
+        tl.fromTo("#name", 1.6, { y: 0, opacity: 0 }, {y: 0, opacity:1 });
+      }, []);
+
+    return (
     <HeaderContainer >
         <LogoContainer to="/" >
-            <LogoImg src={logo} alt="Logo" />
-            <NameContainer>Great Outdoors</NameContainer>
+            <LogoImg id="logoPic" src={logo} alt="Logo" />
+            <NameContainer id="name" >Great Outdoors</NameContainer>
         </LogoContainer>
         
         <OptionsContainer >
@@ -36,6 +46,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
         }
     </HeaderContainer>
 )
+}
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,

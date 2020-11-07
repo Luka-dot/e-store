@@ -42,7 +42,7 @@ height: 75px;
 }
 `;
 
-export const NameContainer = styled.h2`\
+export const NameContainer = styled.h1`\
     color: darkgreen;
     display: flex;
     align-items: left;
