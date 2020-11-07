@@ -9,7 +9,6 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 import { signOutStart } from '../../redux/user/user.actions';
 
-// import './header.styles.scss';
 import { HeaderContainer, LogoContainer, NameContainer, OptionsContainer, OptionDiv, OptionLink, LogoImg } from './header.styles';
 import logo from '../../assets/logo.png';
 
