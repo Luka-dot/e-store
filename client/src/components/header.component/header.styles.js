@@ -42,6 +42,16 @@ height: 75px;
 }
 `;
 
+export const TextLogo = styled.img`
+    height: 75px;
+    width: 200vh;
+    
+
+@media screen and (max-width: 800px) {
+    align-items: top;
+}
+`;
+
 export const NameContainer = styled.h1`\
     color: darkgreen;
     display: flex;

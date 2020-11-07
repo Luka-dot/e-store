@@ -9,8 +9,9 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 import { signOutStart } from '../../redux/user/user.actions';
 
-import { HeaderContainer, LogoContainer, NameContainer, OptionsContainer, OptionDiv, OptionLink, LogoImg } from './header.styles';
+import { HeaderContainer, LogoContainer, NameContainer, OptionsContainer, OptionDiv, OptionLink, LogoImg, TextLogo } from './header.styles';
 import logo from '../../assets/logo.png';
+import textLogo from '../../assets/GOText2.svg';
 
 const Header = ({ currentUser, hidden, signOutStart }) => {
 
@@ -21,11 +22,13 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         tl.fromTo("#name", 1.6, { y: 0, opacity: 0 }, {y: 0, opacity:1 });
       }, []);
 
+//  <NameContainer id="name" >Great Outdoors</NameContainer>
+
     return (
     <HeaderContainer >
         <LogoContainer to="/" >
             <LogoImg id="logoPic" src={logo} alt="Logo" />
-            <NameContainer id="name" >Great Outdoors</NameContainer>
+            <TextLogo src={textLogo} />
         </LogoContainer>
         
         <OptionsContainer >

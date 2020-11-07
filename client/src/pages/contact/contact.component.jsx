@@ -20,7 +20,7 @@ const ContactPage = () => {
           y = 0;
         }
         gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-          duration: 1.25, 
+          duration: 4.25, 
           x: 0,
           y: 0, 
           autoAlpha: 1, 
@@ -42,7 +42,7 @@ const ContactPage = () => {
           ScrollTrigger.create({
             trigger: elem,
             onEnter: function() { animateFrom(elem) }, 
-            onEnterBack: function() { animateFrom(elem, -1) },
+            onEnterBack: function() { animateFrom(elem, -2) },
             onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
           });
         });
