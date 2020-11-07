@@ -1,12 +1,14 @@
 const INITIAL_STATE = {
     sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-      size: 'small',
+      title: 'climbing',
+      imageUrl: 'https://images.unsplash.com/photo-1583623010148-9c00f6b12efe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+      size: 'medium',
       id: 1,
       linkUrl: 'shop/hats',
-   
+      //  https://images.unsplash.com/photo-1601025678763-e8f5835995db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
+      //  https://images.unsplash.com/photo-1583623010148-9c00f6b12efe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
+      //  https://i.ibb.co/cvpntL1/hats.png
     },
     {
       // title: 'jackets',
@@ -32,7 +34,7 @@ const INITIAL_STATE = {
     {
       // title: 'women\'s',
       // imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      title: 'equipment',
+      title: 'gear',
       imageUrl: 'https://images.unsplash.com/photo-1535530124635-c5487dfad499?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
       size: 'large',
       id: 4,
