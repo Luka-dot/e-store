@@ -11,7 +11,7 @@ const LogRocket = () => {
   }, []);
 
   return (
-    <svg viewBox="20 0 600 40" width="600px" height="40px">
+    <svg viewBox="20 0 600 40" width="600px" height="75px">
       <g
         id="Page-1"
         stroke="none"

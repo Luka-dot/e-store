@@ -23,13 +23,13 @@ const INITIAL_STATE = {
     },
     {
       // title: 'sneakers',
-      // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',   https://i.imgur.com/zAUjIsI.jpg
       title: 'boots',
-      imageUrl: 'https://images.unsplash.com/photo-1528641638513-63e382072b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80',
+      imageUrl: 'https://i.imgur.com/zAUjIsI.jpg',
       size: 'small',
       id: 3,
       linkUrl: 'shop/sneakers',
-      
+      // https://images.unsplash.com/photo-1528641638513-63e382072b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
     },
     {
       // title: 'women\'s',
