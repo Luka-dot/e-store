@@ -48,6 +48,7 @@ body {
   .feature {
     display: flex;
     align-items: center;
+    margin-top: 25px;;
   }
   .card {
     margin-bottom: 30px;
@@ -68,10 +69,11 @@ body {
   }
   img {
     max-width: 100%;
+    
   }
   
   .header-section {
-    margin: 200px auto;
+    margin: 150px auto;
   }
   
   .gs-reveal {

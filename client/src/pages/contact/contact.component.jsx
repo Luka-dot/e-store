@@ -51,7 +51,7 @@ const ContactPage = () => {
     return (
 <div className="container">
     <div className="cInnerContent">
-        <h1 className="header-section gs-reveal ipsType_center">We are pasionate about exploring great outdoors</h1>
+        <h1 className="header-section gs-reveal ipsType_center">We are pasionate about exploring great outdoors.</h1>
 
         <div className="features">
             <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
@@ -63,15 +63,15 @@ const ContactPage = () => {
 
                 <div className="ipsGrid_span7 ipsType_left">
                     <h2 className="heading_large gs-reveal">Find amazing <strong>places</strong> to explore</h2>
-                    <p className="gs-reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn. <a href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any SVG shape into any other shape smoothly regardless of the number of points in each. <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to easily move any object along a path.</p>
+                    <p className="gs-reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </div>
 
         <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div className="ipsGrid_span7 ipsType_right">
-                <h2 className="heading_large gs-reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
-                <p className="gs-reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene. <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a href="//www.pixijs.com/">Pixi.js</a> objects with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+                <h2 className="heading_large gs-reveal">Helping people get to enjoy their natureexploration</h2>
+                <p className="gs-reveal">Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquam ultrices sagittis orci a scelerisque. Pretium fusce id velit ut tortor pretium viverra suspendisse. Felis imperdiet proin fermentum leo vel orci. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Molestie at elementum eu facilisis sed. Pulvinar sapien et ligula ullamcorper. Condimentum id venenatis a condimentum. Massa vitae tortor condimentum lacinia. Mauris commodo quis imperdiet massa tincidunt nunc.</p>
             </div>
 
             <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromRight">
@@ -89,15 +89,15 @@ const ContactPage = () => {
             
 
             <div className="ipsGrid_span7 ipsType_left">
-                <h2 className="heading_large gs-reveal">Control performant <strong>Canvas</strong> animations</h2>
-                <p className="gs-reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe Animate</a> and <a href="//createjs.com/easeljs">EaseJS</a> through GSAP's <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+                <h2 className="heading_large gs-reveal">Providing best quality products for our customers</h2>
+                <p className="gs-reveal">Turpis massa tincidunt dui ut ornare lectus sit amet. Parturient montes nascetur ridiculus mus mauris. At consectetur lorem donec massa sapien faucibus. Vitae congue eu consequat ac felis donec et. Pellentesque adipiscing commodo elit at. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. </p>
             </div>
         </div>
 
         <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div className="ipsGrid_span7 ipsType_right">
-                <h2 className="heading_large gs-reveal"><strong>Award winning</strong> websites</h2>
-                <p className="gs-reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check out .</p>
+                <h2 className="heading_large gs-reveal">The best customer service</h2>
+                <p className="gs-reveal">Eget magna fermentum iaculis eu non diam. Eros donec ac odio tempor orci dapibus ultrices. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Dolor sit amet consectetur adipiscing elit. Mauris a diam maecenas sed enim ut.</p>
             </div>
 
             <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromRight">

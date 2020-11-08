@@ -5,7 +5,7 @@ const INITIAL_STATE = {
       imageUrl: 'https://images.unsplash.com/photo-1583623010148-9c00f6b12efe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
       size: 'small',
       id: 1,
-      linkUrl: 'shop/hats',
+      linkUrl: 'shop/climbing',
       //  https://images.unsplash.com/photo-1601025678763-e8f5835995db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
       //  https://images.unsplash.com/photo-1583623010148-9c00f6b12efe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
       //  https://i.ibb.co/cvpntL1/hats.png
@@ -28,7 +28,7 @@ const INITIAL_STATE = {
       imageUrl: 'https://i.imgur.com/zAUjIsI.jpg',
       size: 'small',
       id: 3,
-      linkUrl: 'shop/sneakers',
+      linkUrl: 'shop/boots',
       // https://images.unsplash.com/photo-1528641638513-63e382072b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80
     },
     {
@@ -38,7 +38,7 @@ const INITIAL_STATE = {
       imageUrl: 'https://images.unsplash.com/photo-1535530124635-c5487dfad499?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
       size: 'large',
       id: 4,
-      linkUrl: 'shop/womens',
+      linkUrl: 'shop/gear',
       //  https://images.unsplash.com/photo-1493244040629-496f6d136cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2232&q=80
       //  https://images.unsplash.com/photo-1535530124635-c5487dfad499?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80
       //  https://images.unsplash.com/photo-1485809052957-5113b0ff51af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1866&q=80
@@ -51,7 +51,7 @@ const INITIAL_STATE = {
       // imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
       size: 'large',
       id: 5,
-      linkUrl: 'shop/mens',
+      linkUrl: 'shop/tents',
       
     }
 ]};
