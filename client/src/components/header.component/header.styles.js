@@ -34,8 +34,8 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const LogoImg = styled.img`
-width: 75px;
-height: 75px;
+width: 100px;
+height: 100px;
 
 @media screen and (max-width: 800px) {
     align-items: top;
@@ -48,7 +48,7 @@ export const TextLogo = styled.img`
     
 
 @media screen and (max-width: 800px) {
-    align-items: top;
+    display: none;
 }
 `;
 
@@ -81,4 +81,14 @@ export const OptionLink = styled(Link)`
 
 export const OptionDiv = styled.div`
     ${OptionContainerStyles}
+`;
+
+export const LetterLogoSvg = styled.path`
+    stroke-dasharray: 30;
+    stroke-dashoffset: 50;
+    fill-opacity: 0;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
