@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { TimelineMax } from "gsap";
+import { gsap } from "gsap";
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -17,7 +17,7 @@ import LogRocket from '../logo/logo.text';
 const Header = ({ currentUser, hidden, signOutStart }) => {
 
     useEffect(() => {
-        const tl = new TimelineMax();
+        const tl = gsap.timeline();
     
         tl.fromTo("#logoPic", 0.6, { y: -50, opacity: 0 }, {y: 0, opacity:1, delay: 0.5 });
     //    tl.fromTo("#name", 1.6, { y: 0, opacity: 0 }, {y: 0, opacity:1 });
