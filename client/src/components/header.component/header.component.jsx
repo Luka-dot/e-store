@@ -23,8 +23,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
     //    tl.fromTo("#name", 1.6, { y: 0, opacity: 0 }, {y: 0, opacity:1 });
       }, []);
 
-//  <NameContainer id="name" >Great Outdoors</NameContainer>
-
     return (
     <HeaderContainer >
         <LogoContainer to="/" >
