@@ -5,6 +5,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 
 import "./contact.styles.scss";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ContactPage = () => {
 
     const animateFrom = (elem, direction) => {
@@ -34,7 +36,7 @@ const ContactPage = () => {
       }
       
       useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    //    gsap.registerPlugin(ScrollTrigger);
         
         gsap.utils.toArray(".gs-reveal").forEach(function(elem) {
           hide(elem); // assure that the element is hidden when scrolled into view
