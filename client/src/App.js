@@ -5,23 +5,17 @@ import { createStructuredSelector } from 'reselect';
 
 import { GlobalStyle } from './global.styles';
 
-//  import ShopPage from './pages/shop/shop.component';
-//  import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header.component/header.component';
-//  import SignInAndSignOut from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { checkUserSession } from './redux/user/user.actions';
 import Spinner from './components/spinner/spinner.component';
 import { selectCurrentUser } from './redux/user/user.selector';
 import ErrorBoundry from './components/error-boundry/error-boundary.component';
-//  import HomePage from './pages/homepage/homepage.componenet';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.componenet'));
 const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 const SignInAndSignOut = lazy(() => import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component'));
 const ContactPage = lazy(() => import('./pages/contact/contact.component'));
-
-// import { selectCollectionsForPreview } from './redux/shop/shop.selector';
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {

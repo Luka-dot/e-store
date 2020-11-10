@@ -49,7 +49,9 @@ const ContactPage = () => {
       });
 
       useEffect(() => {
-        gsap.fromTo('#greatOutdoors', { color: "darkolivegreen"}, {color: "#1f6a14", duration: 4, repeat: -1}, 4);
+        gsap.fromTo('#greatOutdoors', 
+        { color: "darkolivegreen"}, 
+        {color: "#1f6a14", duration: 4, repeat: -1}, 4);
       }, []);
 
     return (
