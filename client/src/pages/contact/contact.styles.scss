@@ -58,6 +58,7 @@ body {
     background: #ffffff;
     box-shadow: 1px 1px 5px 1px #CCCCCC;
     transition: 0.3s;
+    
   }
   .featured-image-container .card {
     padding: 10px;
@@ -66,10 +67,12 @@ body {
   }
   h2.heading_large {
     font-size: 1.8em;
+  
   }
   img {
     max-width: 100%;
-    
+  //  height: 479px;
+    padding-bottom: calc(100% -10px);
   }
   
   .header-section {

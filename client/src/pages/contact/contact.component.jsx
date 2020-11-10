@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -48,16 +48,20 @@ const ContactPage = () => {
         });
       });
 
+      useEffect(() => {
+        gsap.fromTo('#greatOutdoors', { color: "darkolivegreen"}, {color: "#1f6a14", duration: 4, repeat: -1}, 4);
+      }, []);
+
     return (
 <div className="container">
     <div className="cInnerContent">
-        <h1 className="header-section gs-reveal ipsType_center">We are pasionate about exploring great outdoors.</h1>
+        <h1 className="header-section gs-reveal ipsType_center">We are pasionate about exploring <a id="greatOutdoors">great outdoors</a>.</h1>
 
         <div className="features">
             <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
                 <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromLeft">
                     <div className="card">
-                        <img width="479" src="https://picsum.photos/479/479?index=1" alt=""/>
+                        <img src="https://picsum.photos/id/177/479/479" alt=""/>
                     </div>
                 </div>
 
@@ -70,20 +74,20 @@ const ContactPage = () => {
 
         <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div className="ipsGrid_span7 ipsType_right">
-                <h2 className="heading_large gs-reveal">Helping people get to enjoy their natureexploration</h2>
+                <h2 className="heading_large gs-reveal">Helping people get to enjoy nature exploration</h2>
                 <p className="gs-reveal">Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Aliquam ultrices sagittis orci a scelerisque. Pretium fusce id velit ut tortor pretium viverra suspendisse. Felis imperdiet proin fermentum leo vel orci. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Molestie at elementum eu facilisis sed. Pulvinar sapien et ligula ullamcorper. Condimentum id venenatis a condimentum. Massa vitae tortor condimentum lacinia. Mauris commodo quis imperdiet massa tincidunt nunc.</p>
             </div>
 
             <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromRight">
                 <div className="card">
-                    <img width="479" src="https://picsum.photos/479/479?index=2" alt=""/>
+                    <img width="479" src="https://picsum.photos/id/1036/479/479" alt=""/>
                 </div>
             </div>
 
         <div className="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromLeft">
                 <div className="card">
-                    <img width="479" src="https://picsum.photos/479/479?index=3" alt=""/>
+                    <img width="479" src="https://picsum.photos/id/252/479/479" alt=""/>
                 </div>
             </div>
             
@@ -102,7 +106,7 @@ const ContactPage = () => {
 
             <div className="featured-image-container ipsGrid_span5 gs-reveal gs-reveal_fromRight">
                 <div className="card">
-                    <img width="479" src="https://picsum.photos/479/479?index=4" alt=""/>
+                    <img width="479" src="https://picsum.photos/id/192/479/479" alt=""/>
                 </div>
             </div>
         </div>
