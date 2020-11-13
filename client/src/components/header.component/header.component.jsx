@@ -62,16 +62,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
-
-
-/*
-
-<HeaderContainer >
-        <LogoContainer to="/" >
-            <LogoImg id="logoPic" src={logo} alt="Logo" />
-                <TextLogo src={textLogo} />
-        </LogoContainer>
-        
-        <OptionsContainer >
-
-*/
