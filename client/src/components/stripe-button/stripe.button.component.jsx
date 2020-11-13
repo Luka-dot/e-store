@@ -35,7 +35,6 @@ const StripeCheckoutButton = ({ price, clearCart }) => {
              name='My E-store'
              billingAddress
              shippingAddress
-        //     image='https://scgshare.com/i/CUz.svg'
              description={`Your total is $${price}`}
              amount={priceForStripe}
              panelLabel='Pay Now'

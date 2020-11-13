@@ -23,8 +23,6 @@ const config = {
   
     const snapShot = await userRef.get();
 
-    // const collectionSnapshot = await collectionRef.get();
-
     if (!snapShot.exists) {
       const { displayName, email } = userAuth;
       const createdAt = new Date();
